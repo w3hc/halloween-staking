@@ -1,8 +1,12 @@
 import { ThirdwebProvider } from "@thirdweb-dev/react";
 import "../styles/globals.css";
+// import { artheraTestnet } from "@thirdweb-dev/chains";
+// import { useChain } from "@thirdweb-dev/react";
+import { ArtheraTestnet } from "@thirdweb-dev/chains";
 
 // This is the chain your dApp will work on.
-const activeChain = "mumbai";
+const activeChain = ArtheraTestnet;
+console.log("activeChain:", activeChain)
 
 function MyApp({ Component, pageProps }) {
   return (
